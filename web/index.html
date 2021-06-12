@@ -1,0 +1,31 @@
+<body>
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+
+<!-- Add from here -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCpU1vvX8y_Y2p7S1Mw-xajIhxfKcfz7K0",
+        authDomain: "fir-flutter-codelab-6ebfe.firebaseapp.com",
+        projectId: "fir-flutter-codelab-6ebfe",
+        storageBucket: "fir-flutter-codelab-6ebfe.appspot.com",
+        messagingSenderId: "102795098078",
+        appId: "1:102795098078:web:eea0189daaf77d32208f4f"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+<!-- to here. -->
+
+<script src="main.dart.js" type="application/javascript"></script>
+</body>
